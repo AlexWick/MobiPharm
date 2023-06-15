@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nausea Symptoms Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nausea Symptoms Checklist</h1>
+    <form id="nausea-form">
+        <h2>Onset</h2>
+        <label for="onset">When did your nausea start?</label>
+        <input type="datetime-local" id="onset" name="onset">
+        <br>
+
+        <h2>Symptoms</h2>
+        <h3>Nausea</h3>
+        <label for="severity">How severe is your nausea?</label>
+        <select id="severity" name="severity">
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+        </select>
+        <br>
+        <label for="duration">How long does your nausea last?</label>
+        <input type="text" id="duration" name="duration">
+        <br>
+        <label for="frequency">How often do you experience nausea?</label>
+        <select id="frequency" name="frequency">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+            <option value="occasionally">Occasionally</option>
+        </select>
+        <br>
+
+        <h3>Other Symptoms</h3>
+        <label for="vomiting">Do you also experience vomiting?</label>
+        <input type="radio" id="vomiting-yes" name="vomiting" value="yes">
+        <label for="vomiting-yes">Yes</label>
+        <input type="radio" id="vomiting-no" name="vomiting" value="no">
+        <label for="vomiting-no">No</label>
+        <br>
+        <label for="diarrhea">Do you also experience diarrhea?</label>
+        <input type="radio" id="diarrhea-yes" name="diarrhea" value="yes">
+        <label for="diarrhea-yes">Yes</label>
+        <input type="radio" id="diarrhea-no" name="diarrhea" value="no">
+        <label for="diarrhea-no">No</label>
+        <br>
+        <label for="fever">Do you also have a fever?</label>
+        <input type="radio" id="fever-yes" name="fever" value="yes">
+        <label for="fever-yes">Yes</label>
+        <input type="radio" id="fever-no" name="fever" value="no">
+        <label for="fever-no">No</label>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cough Form</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Cough Form</h1>
+    <form id="cough-form">
+        <label for="duration">Duration of Cough:</label>
+        <input type="text" id="duration" name="duration"><br>
+        <label for="frequency">Frequency of Cough:</label>
+        <input type="text" id="frequency" name="frequency"><br>
+        <label for="productive">Is the Cough Productive?:</label>
+        <input type="radio" id="productive" name="productive" value="yes"><label for="productive">Yes</label>
+        <input type="radio" id="not-productive" name="productive" value="no"><label for="not-productive">No</label><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

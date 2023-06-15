@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescription Form</title>
+    <!-- Add Firebase SDK scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v9.1.3 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDGrxD6cShjrMVu8vjI_6roCKCnw7vtqtA",
+            authDomain: "pharmapp-91a79.firebaseapp.com",
+            databaseURL: "https://pharmapp-91a79-default-rtdb.firebaseio.com",
+            projectId: "pharmapp-91a79",
+            storageBucket: "pharmapp-91a79.appspot.com",
+            messagingSenderId: "126931696736",
+            appId: "1:126931696736:web:a11a9487160c7d0aad9705",
+            measurementId: "G-R1552DQLXD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Prescription Form</h1>
+    <div id="login-form">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <div id="register-form">
+        <h2>Register</h2>
+        <form id="register">
+            <label for="email">Email:</label>
+            <input type="email" id="register-email" name="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="register-password" name="password" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <div id="ailments-form" style="display:none;">
+        <h2>Ailments Form</h2>
+        <form id="prescription-form">
+            <label for="ailment">Ailment:</label>
+            <select id="ailment" name="ailment">
+                <option value="">--Select Ailment--</option>
+                <option value="headache">Headache</option>
+                <option value="cough">Cough</option>
+                <option value="sore throat">Sore Throat</option>
+                <option value="fever">Fever</option>
+                <option value="nausea">Nausea</option>
+            </select>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</html>

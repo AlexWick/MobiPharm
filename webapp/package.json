@@ -1,0 +1,28 @@
+{
+  "name": "MobiPharm",
+  "version": "1.0.0",
+  "description": "A app for a Pharmacy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "babel src -d dist",
+    "build-functions": "cd functions && npm install && npm run build",
+    "deploy": "firebase deploy",
+    "build-webapp": "cd webapp && npm install && npm run build",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.1",
+    "upgrade": "^1.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.0.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0"
+  }
+}

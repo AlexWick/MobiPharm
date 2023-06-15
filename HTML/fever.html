@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fever Symptom Form</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Fever Symptom Form</h1>
+    <form id="symptom-form">
+        <label for="symptom-1">Do you have a high temperature (fever)?</label><br>
+        <input type="radio" id="symptom-1-yes" name="symptom-1" value="Yes">
+        <label for="symptom-1-yes">Yes</label><br>
+        <input type="radio" id="symptom-1-no" name="symptom-1" value="No">
+        <label for="symptom-1-no">No</label><br><br>
+
+        <label for="symptom-2">Do you have a cough?</label><br>
+        <input type="radio" id="symptom-2-yes" name="symptom-2" value="Yes">
+        <label for="symptom-2-yes">Yes</label><br>
+        <input type="radio" id="symptom-2-no" name="symptom-2" value="No">
+        <label for="symptom-2-no">No</label><br><br>
+
+        <label for="symptom-3">Do you have a sore throat?</label><br>
+        <input type="radio" id="symptom-3-yes" name="symptom-3" value="Yes">
+        <label for="symptom-3-yes">Yes</label><br>
+        <input type="radio" id="symptom-3-no" name="symptom-3" value="No">
+        <label for="symptom-3-no">No</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
